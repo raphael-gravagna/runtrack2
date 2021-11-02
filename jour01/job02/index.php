@@ -2,7 +2,7 @@
     $str= "LaPlateforme";    
     $str2= "Vive ";
     $str3= " !";
-        echo $str2 . $str . $str3; ///unefois//
+        echo $str2 . $str . $str3 ".."; ///unefois//
     $str4= "LaPlateforme";    
     $str5= "Vive ";
     $str6= " !";
