@@ -1,7 +1,7 @@
 <?php
     for ($var = 0; $var <= 100; $var = $var + 1) {
         if($var >= 0 && $var <=20 ) {
-            echo "<i>"."$var"."<br/>"."<i>"; 
+            echo "<i>"."$var"."<br/>"."</i>"; 
         }
 
         elseif($var == 41)
