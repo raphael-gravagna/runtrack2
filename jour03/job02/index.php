@@ -6,9 +6,4 @@ while(isset($str[$i])) {
         $i = $i +2;
 
     }
-
-    
-
-
-
 ?>
