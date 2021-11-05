@@ -1,14 +1,8 @@
 <?php
 var_dump($_GET);
-$i= 0;
 foreach($_GET as $key => $Value) {
     echo $key." ".$Value;
-    $i = $i + 1;
 }
-    echo $i;
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +28,21 @@ foreach($_GET as $key => $Value) {
           <input type="submit" value="Subscribe!">
         </div>
       </form>
+
+      <table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+    </tbody>
+</table>
+
 
 
     
