@@ -1,10 +1,3 @@
-<?php
-var_dump($_GET);
-foreach($_GET as $key => $Value) {
-    echo $key." ".$Value;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,14 +25,17 @@ foreach($_GET as $key => $Value) {
       <table>
     <thead>
         <tr>
-            <th colspan="2">The table header</th>
+            <th colspan="2">arguments</th>
+            <th colspan="2">value</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>The table body</td>
-            <td>with two columns</td>
-        </tr>
+    <?php
+        foreach($_GET as $key => $Value) {
+        echo "<tr>"."<td>".$key."</td>"."<td>".$Value."</td>"."</tr>";
+        }
+    ?>
+       
     </tbody>
 </table>
 
