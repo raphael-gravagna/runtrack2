@@ -1,19 +1,13 @@
 <?php 
-"jour" == true;
-"jour" == false;
 
-function bonjour($string = "jour"){
-    if($string == true) 
-    return(true);
-    if($string == false)
-    return(false);
+
+function bonjour($jour){
+    if($jour === true) 
+    echo "bonjour";
+    elseif($jour === false)
+    echo "bonsoir";
 }
 
-if("jour" == true) {
-    echo "Bonjour";
-}
-if("jour" == false) {
-    echo "Bonsoir";
-}
+bonjour(true);
 
 ?>
