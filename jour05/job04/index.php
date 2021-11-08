@@ -1,7 +1,29 @@
 <?php
 
-function gethello($str = "Hello LaPlateforme!"){
-    return($str);
-}
 
-echo gethello();
+function calcule($a, $operation, $b) {
+    if($operation == "+") {
+    $result = $a + $b;
+    }
+
+    elseif($operation == "-") {
+    $result = $a - $b;
+    }
+
+    elseif($operation == "*") {
+    $result = $a * $b;
+    }
+
+    elseif($operation == "/") {
+    $result = $a / $b;
+    }
+
+    elseif($operation == "%") {
+    $result = $a % $b;
+    }
+    return $result;
+}
+echo calcule(1, "+", 1);
+
+
+?>

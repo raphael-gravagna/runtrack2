@@ -1,6 +1,6 @@
 <?php
 
-function gethello($str = "Hello LaPlateforme"){
+function gethello($str = "Hello LaPlateforme!"){
     return($str);
 }
 
