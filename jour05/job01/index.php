@@ -1,9 +1,7 @@
 <?php 
 
-function hello($string){
-    return;
+function hello(){
+    return("Hello LaPlateforme!");
 }
-
-echo "Hello LaPlateforme!";
-
+echo hello();
 ?>
