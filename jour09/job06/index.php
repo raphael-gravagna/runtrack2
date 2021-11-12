@@ -1,7 +1,7 @@
 <?php
     $bdd = mysqli_connect('localhost','root','','jour08');
     mysqli_set_charset($bdd , 'utf8');
-    $requete = mysqli_query($bdd,"SELECT COUNT(*) FROM etudiants");
+    $requete = mysqli_query($bdd,"SELECT COUNT(*) AS nb_etudiants FROM etudiants");
     $etudiants = mysqli_fetch_all($requete, MYSQLI_ASSOC);
 
 ?>
@@ -27,7 +27,7 @@ foreach ($etudiants as $etudiant) :?>
 
   <tr>
 
-        <td> <?php echo $etudiant[(*)]; ?></td>
+        <td> <?php echo $etudiant['nb_etudiants']; ?></td>
 
   </tr>
 
